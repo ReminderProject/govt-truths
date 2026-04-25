@@ -147,10 +147,10 @@ const Index = () => {
           </a>
           <nav className="hidden md:flex items-center gap-6 font-mono text-[11px] uppercase tracking-[0.18em]">
             <a href="#myths" className="hover:text-stamp transition-colors">The Myths</a>
-            <a href="#numbers" className="hover:text-stamp transition-colors">The Numbers</a>
-            <a href="#sections" className="hover:text-stamp transition-colors">Inside</a>
-            <a href="#case" className="hover:text-stamp transition-colors">Case Study</a>
-            <a href="#action" className="px-3 py-2 bg-ink text-paper hover:bg-stamp transition-colors">Take Action →</a>
+            <a href="/money-trail" className="hover:text-stamp transition-colors">Money Trail</a>
+            <a href="/said-vs-done" className="hover:text-stamp transition-colors">Said vs. Done</a>
+            <a href="/permanent-class" className="hover:text-stamp transition-colors">Permanent Class</a>
+            <a href="/take-action" className="px-3 py-2 bg-ink text-paper hover:bg-stamp transition-colors">Take Action →</a>
           </nav>
           <div className="md:hidden font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
             Vol. I · Civic Record
