@@ -369,7 +369,7 @@ const Index = () => {
             {SECTIONS.map((s, i) => (
               <a
                 key={s.n}
-                href="#"
+                href={s.href}
                 className="reveal group grid grid-cols-12 gap-6 px-6 md:px-10 py-8 border-b border-ink last:border-b-0 hover:bg-ink hover:text-paper transition-colors"
                 style={{ transitionDelay: `${i * 40}ms` }}
               >
