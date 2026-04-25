@@ -102,11 +102,11 @@ const STATS = [
 ];
 
 const SECTIONS = [
-  { n: "01", t: "The Setup: How It Actually Works", d: "Who controls what, what each branch can and cannot do, and why blaming the President for what Congress controls is exactly what Congress wants." },
-  { n: "02", t: "The Money Trail", d: "From your paycheck to the empty hospice office billing $6,000 per phantom patient. The pipeline is longer than you think — and leaks at every level." },
-  { n: "03", t: "Said vs. Done: The Receipts", d: "What every administration promised about IRS enforcement, tax fairness, and spending. What the data actually shows. Documented, sourced, bipartisan." },
-  { n: "04", t: "The Permanent Class", d: "95% re-election. 15% approval. The revolving door. The filibuster. The campaign-finance math. How incumbents protect the system that protects them." },
-  { n: "05", t: "What You Can Actually Do", d: "Ten people per county. That’s the math. Fraud requires empty rooms — local boards nobody watches. Here is exactly how to take a seat." },
+  { n: "01", t: "The Setup: How It Actually Works", d: "Who controls what, what each branch can and cannot do, and why blaming the President for what Congress controls is exactly what Congress wants.", href: "#myths" },
+  { n: "02", t: "The Money Trail", d: "From your paycheck to the empty hospice office billing $6,000 per phantom patient. The pipeline is longer than you think — and leaks at every level.", href: "/money-trail" },
+  { n: "03", t: "Said vs. Done: The Receipts", d: "What every administration promised about IRS enforcement, tax fairness, and spending. What the data actually shows. Documented, sourced, bipartisan.", href: "/said-vs-done" },
+  { n: "04", t: "The Permanent Class", d: "95% re-election. 15% approval. The revolving door. The filibuster. The campaign-finance math. How incumbents protect the system that protects them.", href: "/permanent-class" },
+  { n: "05", t: "What You Can Actually Do", d: "Ten people per county. That’s the math. Fraud requires empty rooms — local boards nobody watches. Here is exactly how to take a seat.", href: "/take-action" },
 ];
 
 const CASE_STATS = [
