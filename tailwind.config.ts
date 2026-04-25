@@ -19,6 +19,16 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        ink: "hsl(var(--ink))",
+        paper: "hsl(var(--paper))",
+        "paper-2": "hsl(var(--paper-2))",
+        oxblood: {
+          DEFAULT: "hsl(var(--oxblood))",
+          deep: "hsl(var(--oxblood-deep))",
+        },
+        federal: "hsl(var(--federal))",
+        stamp: "hsl(var(--stamp-red))",
+        hairline: "hsl(var(--hairline))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -63,6 +73,11 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        display: ["Fraunces", "Georgia", "serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "ui-monospace", "monospace"],
+      },
       keyframes: {
         "accordion-down": {
           from: {
@@ -80,10 +95,15 @@ export default {
             height: "0",
           },
         },
+        "marquee": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "marquee": "marquee 90s linear infinite",
       },
     },
   },
