@@ -472,7 +472,7 @@ const Index = () => {
               <p className="mt-5 text-lg leading-relaxed text-foreground/85">
                 You don’t need to run for Senate. You need ten neighbors and a Tuesday afternoon.
               </p>
-              <a href="#" className="mt-8 inline-flex items-center gap-3 bg-ink text-paper px-7 py-5 font-mono text-xs uppercase tracking-[0.22em] hover:bg-stamp transition-colors group">
+              <a href="/take-action" className="mt-8 inline-flex items-center gap-3 bg-ink text-paper px-7 py-5 font-mono text-xs uppercase tracking-[0.22em] hover:bg-stamp transition-colors group">
                 Take the seat
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
