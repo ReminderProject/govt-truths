@@ -498,10 +498,10 @@ const Index = () => {
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-paper/50 mb-4">The Sections</div>
               <ul className="space-y-2 text-paper/85">
                 <li><a href="#myths" className="hover:text-stamp transition-colors">01 — The Myths</a></li>
-                <li><a href="#numbers" className="hover:text-stamp transition-colors">02 — The Money Trail</a></li>
-                <li><a href="#sections" className="hover:text-stamp transition-colors">03 — Said vs. Done</a></li>
-                <li><a href="#case" className="hover:text-stamp transition-colors">04 — The Permanent Class</a></li>
-                <li><a href="#action" className="hover:text-stamp transition-colors">05 — What You Can Do</a></li>
+                <li><a href="/money-trail" className="hover:text-stamp transition-colors">02 — The Money Trail</a></li>
+                <li><a href="/said-vs-done" className="hover:text-stamp transition-colors">03 — Said vs. Done</a></li>
+                <li><a href="/permanent-class" className="hover:text-stamp transition-colors">04 — The Permanent Class</a></li>
+                <li><a href="/take-action" className="hover:text-stamp transition-colors">05 — What You Can Do</a></li>
               </ul>
             </div>
             <div className="col-span-6 md:col-span-4">
