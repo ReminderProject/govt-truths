@@ -102,11 +102,11 @@ const STATS = [
 ];
 
 const SECTIONS = [
-  { n: "01", t: "The Setup: How It Actually Works", d: "Who controls what, what each branch can and cannot do, and why blaming the President for what Congress controls is exactly what Congress wants." },
-  { n: "02", t: "The Money Trail", d: "From your paycheck to the empty hospice office billing $6,000 per phantom patient. The pipeline is longer than you think — and leaks at every level." },
-  { n: "03", t: "Said vs. Done: The Receipts", d: "What every administration promised about IRS enforcement, tax fairness, and spending. What the data actually shows. Documented, sourced, bipartisan." },
-  { n: "04", t: "The Permanent Class", d: "95% re-election. 15% approval. The revolving door. The filibuster. The campaign-finance math. How incumbents protect the system that protects them." },
-  { n: "05", t: "What You Can Actually Do", d: "Ten people per county. That’s the math. Fraud requires empty rooms — local boards nobody watches. Here is exactly how to take a seat." },
+  { n: "01", t: "The Setup: How It Actually Works", d: "Who controls what, what each branch can and cannot do, and why blaming the President for what Congress controls is exactly what Congress wants.", href: "#myths" },
+  { n: "02", t: "The Money Trail", d: "From your paycheck to the empty hospice office billing $6,000 per phantom patient. The pipeline is longer than you think — and leaks at every level.", href: "/money-trail" },
+  { n: "03", t: "Said vs. Done: The Receipts", d: "What every administration promised about IRS enforcement, tax fairness, and spending. What the data actually shows. Documented, sourced, bipartisan.", href: "/said-vs-done" },
+  { n: "04", t: "The Permanent Class", d: "95% re-election. 15% approval. The revolving door. The filibuster. The campaign-finance math. How incumbents protect the system that protects them.", href: "/permanent-class" },
+  { n: "05", t: "What You Can Actually Do", d: "Ten people per county. That’s the math. Fraud requires empty rooms — local boards nobody watches. Here is exactly how to take a seat.", href: "/take-action" },
 ];
 
 const CASE_STATS = [
@@ -147,10 +147,10 @@ const Index = () => {
           </a>
           <nav className="hidden md:flex items-center gap-6 font-mono text-[11px] uppercase tracking-[0.18em]">
             <a href="#myths" className="hover:text-stamp transition-colors">The Myths</a>
-            <a href="#numbers" className="hover:text-stamp transition-colors">The Numbers</a>
-            <a href="#sections" className="hover:text-stamp transition-colors">Inside</a>
-            <a href="#case" className="hover:text-stamp transition-colors">Case Study</a>
-            <a href="#action" className="px-3 py-2 bg-ink text-paper hover:bg-stamp transition-colors">Take Action →</a>
+            <a href="/money-trail" className="hover:text-stamp transition-colors">Money Trail</a>
+            <a href="/said-vs-done" className="hover:text-stamp transition-colors">Said vs. Done</a>
+            <a href="/permanent-class" className="hover:text-stamp transition-colors">Permanent Class</a>
+            <a href="/take-action" className="px-3 py-2 bg-ink text-paper hover:bg-stamp transition-colors">Take Action →</a>
           </nav>
           <div className="md:hidden font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
             Vol. I · Civic Record
@@ -369,7 +369,7 @@ const Index = () => {
             {SECTIONS.map((s, i) => (
               <a
                 key={s.n}
-                href="#"
+                href={s.href}
                 className="reveal group grid grid-cols-12 gap-6 px-6 md:px-10 py-8 border-b border-ink last:border-b-0 hover:bg-ink hover:text-paper transition-colors"
                 style={{ transitionDelay: `${i * 40}ms` }}
               >
@@ -472,7 +472,7 @@ const Index = () => {
               <p className="mt-5 text-lg leading-relaxed text-foreground/85">
                 You don’t need to run for Senate. You need ten neighbors and a Tuesday afternoon.
               </p>
-              <a href="#" className="mt-8 inline-flex items-center gap-3 bg-ink text-paper px-7 py-5 font-mono text-xs uppercase tracking-[0.22em] hover:bg-stamp transition-colors group">
+              <a href="/take-action" className="mt-8 inline-flex items-center gap-3 bg-ink text-paper px-7 py-5 font-mono text-xs uppercase tracking-[0.22em] hover:bg-stamp transition-colors group">
                 Take the seat
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
@@ -498,10 +498,10 @@ const Index = () => {
               <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-paper/50 mb-4">The Sections</div>
               <ul className="space-y-2 text-paper/85">
                 <li><a href="#myths" className="hover:text-stamp transition-colors">01 — The Myths</a></li>
-                <li><a href="#numbers" className="hover:text-stamp transition-colors">02 — The Money Trail</a></li>
-                <li><a href="#sections" className="hover:text-stamp transition-colors">03 — Said vs. Done</a></li>
-                <li><a href="#case" className="hover:text-stamp transition-colors">04 — The Permanent Class</a></li>
-                <li><a href="#action" className="hover:text-stamp transition-colors">05 — What You Can Do</a></li>
+                <li><a href="/money-trail" className="hover:text-stamp transition-colors">02 — The Money Trail</a></li>
+                <li><a href="/said-vs-done" className="hover:text-stamp transition-colors">03 — Said vs. Done</a></li>
+                <li><a href="/permanent-class" className="hover:text-stamp transition-colors">04 — The Permanent Class</a></li>
+                <li><a href="/take-action" className="hover:text-stamp transition-colors">05 — What You Can Do</a></li>
               </ul>
             </div>
             <div className="col-span-6 md:col-span-4">
