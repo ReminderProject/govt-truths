@@ -200,7 +200,6 @@ export function SectionHero({
   );
 }
 
-import { Link as RLink } from "react-router-dom";
 export function PrevNext({
   prev,
   next,
@@ -212,16 +211,16 @@ export function PrevNext({
     <div className="border-y border-ink/80 bg-paper-2">
       <div className="mx-auto max-w-[1400px] px-6 py-6 flex flex-wrap items-center justify-between gap-4">
         {prev ? (
-          <RLink to={prev.to} className="group inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.22em] hover:text-stamp transition-colors">
+          <Link to={prev.to} className="group inline-flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.22em] hover:text-stamp transition-colors">
             <span className="transition-transform group-hover:-translate-x-1">←</span>
             {prev.label}
-          </RLink>
+          </Link>
         ) : <span />}
         {next ? (
-          <RLink to={next.to} className="group inline-flex items-center gap-3 bg-ink text-paper px-5 py-3 font-mono text-[11px] uppercase tracking-[0.22em] hover:bg-stamp transition-colors">
+          <Link to={next.to} className="group inline-flex items-center gap-3 bg-ink text-paper px-5 py-3 font-mono text-[11px] uppercase tracking-[0.22em] hover:bg-stamp transition-colors">
             {next.label}
             <span className="transition-transform group-hover:translate-x-1">→</span>
-          </RLink>
+          </Link>
         ) : <span />}
       </div>
     </div>
