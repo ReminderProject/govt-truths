@@ -1,105 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,800;9..144,900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Civic Brutalist — austere government white-paper palette */
+    --background: 40 30% 96%;          /* warm bone / paper */
+    --foreground: 20 14% 8%;           /* deep ink */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 30% 98%;
+    --card-foreground: 20 14% 8%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 30% 98%;
+    --popover-foreground: 20 14% 8%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 20 14% 8%;              /* ink black */
+    --primary-foreground: 40 30% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 40 20% 90%;
+    --secondary-foreground: 20 14% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 14% 88%;
+    --muted-foreground: 20 8% 36%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 358 75% 38%;             /* oxblood / federal red */
+    --accent-foreground: 40 30% 96%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --ink: 20 14% 8%;
+    --paper: 40 30% 96%;
+    --paper-2: 40 22% 91%;
+    --oxblood: 358 75% 38%;
+    --oxblood-deep: 358 80% 26%;
+    --federal: 218 70% 22%;
+    --stamp-red: 358 82% 44%;
+    --rule: 20 10% 18%;
+    --hairline: 20 8% 78%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 358 75% 38%;
+    --destructive-foreground: 40 30% 96%;
 
-    --radius: 0.5rem;
+    --border: 20 8% 80%;
+    --input: 20 8% 80%;
+    --ring: 20 14% 8%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --shadow-stamp: 0 1px 0 hsl(var(--ink) / 0.9), 0 0 0 1px hsl(var(--ink) / 0.9);
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  .dark { /* not used — single mode */
+    --background: 20 14% 8%;
+    --foreground: 40 30% 96%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+  * { @apply border-border; }
+
+  html { scroll-behavior: smooth; }
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    font-feature-settings: "ss01", "cv11";
+    background-image:
+      repeating-linear-gradient(0deg, hsl(var(--ink) / 0.025) 0 1px, transparent 1px 4px);
+  }
+
+  ::selection { background: hsl(var(--ink)); color: hsl(var(--paper)); }
+}
+
+@layer components {
+  .font-display { font-family: var(--font-display); font-optical-sizing: auto; font-variation-settings: "SOFT" 0; }
+  .font-mono { font-family: var(--font-mono); }
+
+  /* Hairline rule */
+  .rule { @apply h-px w-full bg-foreground/80; }
+  .rule-thick { @apply h-[3px] w-full bg-foreground; }
+
+  /* Eyebrow label */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Stamp — looks like inked rubber stamp */
+  .stamp {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 6px 12px 5px;
+    color: hsl(var(--stamp-red));
+    border: 2px solid hsl(var(--stamp-red));
+    background: transparent;
+    transform: rotate(-2deg);
+    box-shadow: inset 0 0 0 1px hsl(var(--paper));
+  }
+  .stamp-ink {
+    color: hsl(var(--ink));
+    border-color: hsl(var(--ink));
+  }
+  .stamp-solid {
+    background: hsl(var(--stamp-red));
+    color: hsl(var(--paper));
+  }
+
+  /* Big condensed display number */
+  .display-num {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-variation-settings: "opsz" 144, "SOFT" 0;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+  }
+
+  /* Document grid frame */
+  .doc-frame {
+    border: 1px solid hsl(var(--ink));
+    background: hsl(var(--paper));
+  }
+
+  /* Newspaper ticker */
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .ticker-track { animation: ticker 90s linear infinite; }
+  .ticker-track:hover { animation-play-state: paused; }
+
+  /* Slow pan grain */
+  .grain::before {
+    content: "";
+    position: absolute; inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(hsl(var(--ink) / 0.08) 1px, transparent 1px);
+    background-size: 3px 3px;
+    mix-blend-mode: multiply;
+    opacity: 0.35;
+  }
+
+  /* Reveal */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* Marker / highlighter */
+  .marker {
+    background-image: linear-gradient(180deg, transparent 60%, hsl(var(--stamp-red) / 0.25) 60%);
+    padding: 0 2px;
+  }
+
+  /* Bottom line callout bar */
+  .bottom-line {
+    border-left: 4px solid hsl(var(--stamp-red));
+    background: hsl(var(--ink));
+    color: hsl(var(--paper));
   }
 }
