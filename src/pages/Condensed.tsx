@@ -66,6 +66,14 @@ const ALARMS = [
       "3,144 counties. Most local board seats are filled by application, not election — no campaign, no fundraising, no prior experience required. The people in them were chosen because they were the only ones who applied. One engaged citizen is an anomaly. Ten is a pattern the board must respond to. You know ten people right now. A church group, a veterans post, ten parents from your kid's school, a group chat.",
     receipt: "Primary turnout: 15–20% · The accountability lever almost nobody uses.",
   },
+  {
+    n: "09",
+    tag: "Abdication, then outrage",
+    headline: "Congress hasn't passed major immigration reform since the late 1980s — then calls it 'overreach' every time a president acts.",
+    detail:
+      "The Immigration Reform and Control Act of 1986 was the last comprehensive law. Nearly four decades later, Congress has held the pen and refused to write — no floor vote on the 2013 Senate bill, the 2024 bipartisan border deal killed before a vote, every serious attempt buried by leadership of both parties. Then, the moment any administration issues an executive order to fill the vacuum Congress created, the same members who blocked the legislation file lawsuits and call it tyranny. You don't get to skip your job for 38 years and then claim the substitute teacher overstepped.",
+    receipt: "Last comprehensive immigration law: 1986 · Executive orders & lawsuits since: hundreds · Congressional votes on a comprehensive bill: ~zero.",
+  },
 ];
 
 const QUESTIONS = [
@@ -105,7 +113,7 @@ export default function Condensed() {
             <span className="font-display italic font-semibold text-xl leading-none text-stamp">Truths.</span>
           </Link>
           <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-            Single-Page Edition · 8 Alarms
+            Single-Page Edition · 9 Alarms
           </div>
         </div>
         <div className="h-[3px] w-full bg-gradient-to-r from-ink via-stamp to-ink" />
@@ -127,11 +135,11 @@ export default function Condensed() {
           <div className="flex items-center gap-3 mb-8">
             <span className="stamp">Classified · Public Record</span>
             <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-              The 8 things most Americans never get told
+              The 9 things most Americans never get told
             </span>
           </div>
           <h1 className="font-display font-black leading-[0.86] tracking-[-0.04em] text-[clamp(2.8rem,9vw,7rem)]">
-            Eight facts
+            Nine facts
             <br />
             <span className="italic font-semibold text-stamp">they hope</span>
             <br />
@@ -164,7 +172,7 @@ export default function Condensed() {
       <section id="alarms" className="border-b border-ink/80">
         <div className="mx-auto max-w-[1200px] px-6 py-16 md:py-24">
           <div className="mb-12">
-            <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-stamp mb-3">The Eight Alarms</div>
+            <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-stamp mb-3">The Nine Alarms</div>
             <div className="h-[3px] w-24 bg-ink mb-6" />
             <h2 className="font-display font-black leading-[0.92] tracking-[-0.03em] text-[clamp(2rem,5vw,3.6rem)]">
               What you weren't told — <span className="italic font-semibold text-stamp">in order of how alarming it is.</span>

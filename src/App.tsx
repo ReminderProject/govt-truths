@@ -26,6 +26,7 @@ const App = () => (
           <Route path="/permanent-class" element={<PermanentClass />} />
           <Route path="/take-action" element={<TakeAction />} />
           <Route path="/condensed" element={<Condensed />} />
+          <Route path="/civics-truths" element={<Condensed />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
