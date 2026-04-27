@@ -9,6 +9,7 @@ import MoneyTrail from "./pages/sections/MoneyTrail.tsx";
 import SaidVsDone from "./pages/sections/SaidVsDone.tsx";
 import PermanentClass from "./pages/sections/PermanentClass.tsx";
 import TakeAction from "./pages/sections/TakeAction.tsx";
+import Condensed from "./pages/Condensed.tsx";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/said-vs-done" element={<SaidVsDone />} />
           <Route path="/permanent-class" element={<PermanentClass />} />
           <Route path="/take-action" element={<TakeAction />} />
+          <Route path="/condensed" element={<Condensed />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
