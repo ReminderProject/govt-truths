@@ -274,12 +274,22 @@ export default function Condensed() {
                 Want the receipts? Read the full multi-section edition.
               </p>
             </div>
-            <Link
-              to="/"
-              className="inline-flex items-center gap-3 bg-stamp text-paper px-5 py-3 font-mono text-[11px] uppercase tracking-[0.22em] hover:bg-paper hover:text-ink transition-colors"
-            >
-              Read the full edition →
-            </Link>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://www.jointab.us/find-your-seat"
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-3 bg-paper text-ink px-5 py-3 font-mono text-[11px] uppercase tracking-[0.22em] hover:bg-stamp hover:text-paper transition-colors"
+              >
+                Find your seat · JoinTAB.us →
+              </a>
+              <Link
+                to="/"
+                className="inline-flex items-center gap-3 bg-stamp text-paper px-5 py-3 font-mono text-[11px] uppercase tracking-[0.22em] hover:bg-paper hover:text-ink transition-colors"
+              >
+                Read the full edition →
+              </Link>
+            </div>
           </div>
           <div className="pt-6 flex flex-wrap justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.22em] text-paper/50">
             <span>© Unspoken Truths · Condensed Briefing</span>
