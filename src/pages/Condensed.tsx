@@ -66,6 +66,14 @@ const ALARMS = [
       "3,144 counties. Most local board seats are filled by application, not election — no campaign, no fundraising, no prior experience required. The people in them were chosen because they were the only ones who applied. One engaged citizen is an anomaly. Ten is a pattern the board must respond to. You know ten people right now. A church group, a veterans post, ten parents from your kid's school, a group chat.",
     receipt: "Primary turnout: 15–20% · The accountability lever almost nobody uses.",
   },
+  {
+    n: "09",
+    tag: "Abdication, then outrage",
+    headline: "Congress hasn't passed major immigration reform since the late 1980s — then calls it 'overreach' every time a president acts.",
+    detail:
+      "The Immigration Reform and Control Act of 1986 was the last comprehensive law. Nearly four decades later, Congress has held the pen and refused to write — no floor vote on the 2013 Senate bill, the 2024 bipartisan border deal killed before a vote, every serious attempt buried by leadership of both parties. Then, the moment any administration issues an executive order to fill the vacuum Congress created, the same members who blocked the legislation file lawsuits and call it tyranny. You don't get to skip your job for 38 years and then claim the substitute teacher overstepped.",
+    receipt: "Last comprehensive immigration law: 1986 · Executive orders & lawsuits since: hundreds · Congressional votes on a comprehensive bill: ~zero.",
+  },
 ];
 
 const QUESTIONS = [
