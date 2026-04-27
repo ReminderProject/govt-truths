@@ -113,7 +113,7 @@ export default function Condensed() {
             <span className="font-display italic font-semibold text-xl leading-none text-stamp">Truths.</span>
           </Link>
           <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-            Single-Page Edition · 8 Alarms
+            Single-Page Edition · 9 Alarms
           </div>
         </div>
         <div className="h-[3px] w-full bg-gradient-to-r from-ink via-stamp to-ink" />
@@ -135,11 +135,11 @@ export default function Condensed() {
           <div className="flex items-center gap-3 mb-8">
             <span className="stamp">Classified · Public Record</span>
             <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-              The 8 things most Americans never get told
+              The 9 things most Americans never get told
             </span>
           </div>
           <h1 className="font-display font-black leading-[0.86] tracking-[-0.04em] text-[clamp(2.8rem,9vw,7rem)]">
-            Eight facts
+            Nine facts
             <br />
             <span className="italic font-semibold text-stamp">they hope</span>
             <br />
@@ -172,7 +172,7 @@ export default function Condensed() {
       <section id="alarms" className="border-b border-ink/80">
         <div className="mx-auto max-w-[1200px] px-6 py-16 md:py-24">
           <div className="mb-12">
-            <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-stamp mb-3">The Eight Alarms</div>
+            <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-stamp mb-3">The Nine Alarms</div>
             <div className="h-[3px] w-24 bg-ink mb-6" />
             <h2 className="font-display font-black leading-[0.92] tracking-[-0.03em] text-[clamp(2rem,5vw,3.6rem)]">
               What you weren't told — <span className="italic font-semibold text-stamp">in order of how alarming it is.</span>
